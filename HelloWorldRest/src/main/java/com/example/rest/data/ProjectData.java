@@ -1,5 +1,7 @@
 package com.example.rest.data;
 
+import java.util.UUID;
+
 /**
  * 
  * @author jpsimon
@@ -9,6 +11,7 @@ package com.example.rest.data;
  */
 public class ProjectData {
 	
+	private UUID id;
 	private String content;
 	
 	public ProjectData(String content) {
@@ -21,6 +24,14 @@ public class ProjectData {
 
 	public void setContent(String content) {
 		this.content = content;
+	}
+
+	public UUID getId() {
+		return id;
+	}
+
+	public void setId(UUID id) {
+		this.id = id;
 	}
 
 }

@@ -19,4 +19,10 @@ public class GeneralController {
 	public String general() {
 		return "General";
 	}
+	
+	@GetMapping(value = "/general/evolution1/project", produces = "application/json")
+	@ResponseBody
+	public String projectEvolution1() {
+		return "General evolution1 project";
+	}
 }

@@ -1,10 +1,17 @@
-package com.example.project.data;
+package com.example.rest.data;
 
-public class PorojectData {
+/**
+ * 
+ * @author jpsimon
+ * 
+ * Project data class is just in project
+ *
+ */
+public class ProjectData {
 	
 	private String content;
 	
-	public PorojectData(String content) {
+	public ProjectData(String content) {
 		this.content = content;
 	}
 

@@ -1,4 +1,4 @@
-package com.example.project.controller;
+package com.example.rest.controller;
 
 import java.util.concurrent.atomic.AtomicLong;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -6,8 +6,15 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.example.project.data.Greeting;
+import com.example.rest.data.Greeting;
 
+/**
+ * 
+ * @author jpsimon
+ * 
+ * Greeting controller class is shared in project and product but new method greetingRemarks was added on project
+ *
+ */
 @RestController
 public class GreetingController {
 
@@ -21,7 +28,7 @@ public class GreetingController {
     }
     
     @RequestMapping(value = "/remarks", method = RequestMethod.GET, produces = "application/json")
-    public Greeting greeting(@RequestParam(value="name", defaultValue="World") String name, @RequestParam(value="remarks") String remarks) {
+    public Greeting greetingRemarks(@RequestParam(value="name", defaultValue="World") String name, @RequestParam(value="remarks") String remarks) {
         return new Greeting(counter.incrementAndGet(),
                             String.format(template, name), remarks);
     }

@@ -1,5 +1,12 @@
-package com.example.project.data;
+package com.example.rest.data;
 
+/**
+ * 
+ * @author jpsimon
+ * 
+ * Greeting data class is shared in project and product but new field remarks was added on project
+ *
+ */
 public class Greeting {
 
     private final long id;

@@ -32,4 +32,10 @@ public class GreetingController {
         return new Greeting(counter.incrementAndGet(),
                             String.format(template, name), remarks);
     }
+    
+    @GetMapping(value = "/greeting/evolution1/project", produces = "application/json")
+    public Greeting greetingEvoluction1(@RequestParam(value="name", defaultValue="World") String name, @RequestParam(value="evolution1", defaultValue="evolution1") String evolution1) {
+        return new Greeting(counter.incrementAndGet(),
+                            String.format(template, name), evolution1);
+    }
 }

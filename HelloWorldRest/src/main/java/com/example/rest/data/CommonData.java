@@ -8,5 +8,19 @@ package com.example.rest.data;
  *
  */
 public class CommonData {
+	private long evolution1;
+	
+	public CommonData(long e) {
+		this.evolution1 = e;
+	}
+
+	public long getEvolution1() {
+		return evolution1;
+	}
+
+	public void setEvolution1(long evolution1) {
+		this.evolution1 = evolution1;
+	}
+	
 
 }

@@ -10,6 +10,10 @@ package com.example.rest.data;
 public class CommonData {
 	private long evolution1;
 	
+	public CommonData() {
+		evolution1=1L;
+	}
+	
 	public CommonData(long e) {
 		this.evolution1 = e;
 	}

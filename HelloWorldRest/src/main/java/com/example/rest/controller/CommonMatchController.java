@@ -22,15 +22,15 @@ public class CommonMatchController {
 		return "General";
 	}
 	
-	@GetMapping(value = "/general/evolution1/product-project", produces = "application/json")
+	@GetMapping(value = "/general/evolution1/project", produces = "application/json")
 	@ResponseBody
 	public String evolution1() {
-		return "General evolution1 product-project";
+		return "General evolution1 project";
 	}
 	
-	@GetMapping(value = "/general/evolution2/product-project", produces = "application/json")
+	@GetMapping(value = "/general/evolution2/project", produces = "application/json")
 	@ResponseBody
 	public String evolution2() {
-		return "General evolution2 product-project";
+		return "General evolution2 project";
 	}
 }

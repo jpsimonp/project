@@ -11,30 +11,13 @@ package com.example.rest.data;
  */
 public class CommonMatchData {
 	
-	private String evolution1;
-	private String evolution1_project;
+	private String value;
 
-	public CommonMatchData(String e) {
-		this.evolution1 = e;
+	public String getValue() {
+		return value;
 	}
 
-
-	public String getEvolution1() {
-		return evolution1;
-	}
-
-	public void setEvolution1(String evolution1) {
-		this.evolution1 = evolution1;
-	}
-
-
-	public String getEvolution1_project() {
-		return evolution1_project;
-	}
-
-
-	public void setEvolution1_project(String evolution1_project) {
-		this.evolution1_project = evolution1_project;
-	}
-
+	public void setValue(String value) {
+		this.value = value;
+	}	
 }

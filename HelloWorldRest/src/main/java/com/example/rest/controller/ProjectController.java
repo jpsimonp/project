@@ -24,4 +24,10 @@ public class ProjectController {
 	public ProjectData project(@RequestParam(value="name", defaultValue="ProjectData") String data) {
 		return new ProjectData(data);
 	}
+	
+	@GetMapping(value = "/evolution01", produces = "application/json")
+	@ResponseBody
+	public ProjectData evolution01(@RequestParam(value="name", defaultValue="ProjectData") String data) {
+		return new ProjectData(data);
+	}
 }
